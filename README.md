@@ -18,6 +18,7 @@ Running the program with different number of threads give the identical result:
 >
 >sys	0m0.001s
 >
+
 >export OMP_NUM_THREADS=2
 >
 >time ./pi_clcg_random_parallel.exe 
@@ -30,6 +31,7 @@ Running the program with different number of threads give the identical result:
 >
 >sys	0m0.001s
 >
+
 >export OMP_NUM_THREADS=3
 >
 >time ./pi_clcg_random_parallel.exe 
@@ -42,6 +44,7 @@ Running the program with different number of threads give the identical result:
 >
 >sys	0m0.003s
 >
+
 >export OMP_NUM_THREADS=4
 >
 >time ./pi_clcg_random_parallel.exe 
