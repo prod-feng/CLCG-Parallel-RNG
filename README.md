@@ -2,13 +2,13 @@
 
 This is a simple implemenration of multi-threads(OpenMP) parallel Combined Linear Congruential random number generator, MRG32K3A. It is OpenMP multiple threads safe.
 
->gcc -fopenmp pi_random_parallel.c -lgomp -o pi_random_parallel.exe
+>gcc -fopenmp clcg-parallel-mrg32k3a.c -lgomp -o clcg-parallel-mrg32k3a.exe
 
 Running the program with different number of threads give the identical result:
 
 >export OMP_NUM_THREADS=1
 >
->time ./pi_clcg_random_parallel.exe 
+>time ./clcg-parallel-mrg32k3a.exe 
 >
 > 10000000 trials, pi = 3.142059 
 >
@@ -21,7 +21,7 @@ Running the program with different number of threads give the identical result:
 
 >export OMP_NUM_THREADS=2
 >
->time ./pi_clcg_random_parallel.exe 
+>time ./clcg-parallel-mrg32k3a.exe 
 >
 > 10000000 trials, pi = 3.141130 
 >
@@ -34,7 +34,7 @@ Running the program with different number of threads give the identical result:
 
 >export OMP_NUM_THREADS=3
 >
->time ./pi_clcg_random_parallel.exe 
+>time ./clcg-parallel-mrg32k3a.exe 
 >
 > 10000000 trials, pi = 3.141223 
 >
@@ -47,7 +47,7 @@ Running the program with different number of threads give the identical result:
 
 >export OMP_NUM_THREADS=4
 >
->time ./pi_clcg_random_parallel.exe 
+>time ./clcg-parallel-mrg32k3a.exe 
 >
 > 10000000 trials, pi = 3.141506 
 >
